@@ -3,11 +3,11 @@ import re
 import numpy as np
 import os
 from flask import Flask, app, request, render_template
-from tensorflow.keras import models
-from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing import image
+from keras import models
+from keras.models import load_model
+from keras.preprocessing import image
 from tensorflow.python.ops.gen_array_ops import concat
-from tensorflow.keras.applications.inception_v3 import preprocess_input
+from keras.applications.inception_v3 import preprocess_input
 import requests
 from flask import Flask, request, render_template, redirect, url_for
 from cloudant.client import Cloudant
