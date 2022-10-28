@@ -1,2 +1,8 @@
-# IBM-Project-45061-1660728082
-Intelligent Vehicle Damage Assessment &amp; Cost Estimator for Insurance Companies.
+# Intelligent Vehicle Damage Assessment &amp; Cost Estimator for Insurance Companies
+
+### Team Members
+- Sabin Rakesh M
+- Jeyanth Kumar L
+- Karthik S
+- Arun Kumar R
+- Viswa R
