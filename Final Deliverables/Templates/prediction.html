@@ -1,75 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-  <title>Home | IBM</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <title>Prediction | IBM</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-  .nav.navbar-nav{
-   margin-left: 280px;
-   }
-   .navbar-brand{
-    font-size: 22px;
-   }
-   .footer{
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  bottom: 0;
-  height: 65px;
-  width: 100%;
-   }
+    hr {
+      background-color: black;
+      margin-top: auto;
+    }
+    body {  
+      background: url('https://wallpapercave.com/wp/wp3481950.jpg') no-repeat ;
+      color: white;
+      font-family: 'Product Sans', sans-serif;
+      @import url('https://fonts.cdnfonts.com/css/google-sans');
+    }
+    form{
+    background-color: rgba(255,255,255,0.13);  
+    height: 250px;
+    width: 400px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    }
+    .ayya{
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    .amma{
+      background-color:black;
+      color: white;
+      font-size: 15px;
+      border-radius: 5px;
+    }
   </style>
-</head>
-<body style="background-image: linear-gradient(to right, #DECBA4, #3E5151);">
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#"><b>Intelligent Vehicle Damage Assessment and Cost Estimator for Insurance Companies</b></a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a href="index.html">Home</a></li>
-      <li class="active"><a href="logout.html">logout</a></li>
-    </ul>
-  </div>
-</nav><br><br><br><br>
-
-<div style="margin-top: -45px;" class="container"> 
-    <center> 
-        <h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><b>UPLOAD IMAGE TO PREDICT</b></h2><br>
-     <form action="prediction.html">
-        <input style="background-color:black;
-                      opacity: 78%;
-                      color: white;
-                      font-size: 18px;
-                      width: 250px;"
-                      type="file" id="myFile" name="filename">
-        <br><br>
-        <input style="background-color:black;
-                      opacity: 78%;
-                      color: white;
-                      font-size: 18px;
-                      border-radius: 18px;
-                      width: 150px;" type="submit">
-     </form>
-     <br>
-     <h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" > <b> The Estimated cost for the Damage is = COMING SOON......</b></h2>
-    </center> 
-</div>
-<div class="footer">
-    <p style="color:white;
-              margin-top: 20px;
-              text-align: center;"><b>
-              COPYRIGHT @ 2022,ALL RIGHTS RESERVED</b>
-    </p>
-    
-  </div>
-  
-
-
-</body>
-</html>
+  </head>
+  <body style="background-size: cover;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand mb-0 h1" href="/"><b>Intelligent Vehicle Damage Assessment and Cost Estimator for Insurance Companies</b></a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="/"><b>Home</b></a>
+            <a class="nav-item nav-link" href="/logout"><b>Logout</b></a>
+          </div>
+    </nav><hr>
+    <br><br><br><br><br>
+    <center>
+        <form action="/result" method="post" enctype="multipart/form-data">
+            <h3><b>Upload image to predict</b></h3><br>
+            <input type="file" class="amma" name="file" accept="image/*" required><br><br>
+            <input type="submit" class="ayya" onclick="myFunction()">
+        </form><br>
+        <script>
+          function myFunction() {
+            alert("Our system analyzes the damage")
+          }
+          </script>
+    </center>
+    <nav class="navbar fixed-bottom navbar-light">
+        <div>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<small>@ Copyright 2022</small>
+        </div>
+      </nav> 
+  </body>
